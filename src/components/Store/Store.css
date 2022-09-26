@@ -1,0 +1,24 @@
+.store_area{
+    display: grid;
+    grid-template-areas: 
+    'A A A A  A A A A  B B B B';
+    gap: 15px;
+}
+
+.store_container{
+grid-area: A;
+background-color: aliceblue;
+
+}
+.order_container{
+    grid-area: B;
+    background-color: coral;
+    height: 100%;
+
+}
+
+.products_wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 20px;
+}
