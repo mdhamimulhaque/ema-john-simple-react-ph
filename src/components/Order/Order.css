@@ -1,0 +1,25 @@
+.order_box{
+    width: 100%;
+    padding:0 50px;
+    line-height: 40px;
+}
+
+.order_title{
+    margin-bottom: 50px;
+}
+
+.clear_btn{
+    background-color:crimson;
+padding: 16px 40px;
+border: none;
+margin:20px 10px 0;
+color: #fff;
+}
+
+.review_btn{
+    background-color:gold;
+    padding: 16px 40px;
+    border: none;
+    margin:20px 10px 0;
+    color: #fff;
+}

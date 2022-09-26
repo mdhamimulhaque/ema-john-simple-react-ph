@@ -1,9 +1,18 @@
 import React from 'react';
+import './Order.css';
 
-const Order = () => {
+const Order = ({ cart }) => {
+
     return (
-        <div>
-            order Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit ea quisquam debitis, quas nobis quis natus quidem, itaque aut laboriosam fuga facere! Aliquam, inventore sapiente blanditiis quibusdam temporibus saepe reiciendis, veniam aperiam unde, ab facilis. Consectetur voluptate eos aperiam dicta quod sunt quidem similique natus quibusdam non omnis, commodi modi possimus laboriosam tempore quos aut soluta libero deleniti illo animi inventore perspiciatis! Nam accusantium vero sequi iure porro! Possimus exercitationem repudiandae alias, in eveniet necessitatibus minima commodi saepe suscipit enim, rerum ut. Voluptas velit, fugiat magni autem dolor consectetur. Odit omnis explicabo laboriosam, expedita quia ab totam iste voluptates.
+        <div className='order_box'>
+            <h2 className='order_title'>Order Summary</h2>
+            <p>Selected Items : {cart.length}</p>
+            <p>Total Price: $1140</p>
+            <p>Total Shipping Charge: $5</p>
+            <p>Tax: $114</p>
+            <h4>Grand Total: $1559</h4>
+            <button className='clear_btn'>Clear Cart</button>
+            <button className='review_btn'>Review Order</button>
         </div>
     );
 };
