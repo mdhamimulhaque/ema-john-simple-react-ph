@@ -2,12 +2,14 @@
     display: grid;
     grid-template-areas: 
     'A A A A  A A A A  B B B B';
-    gap: 15px;
+    /* gap: 15px; */
+   
 }
 
 .store_container{
 grid-area: A;
 background-color: aliceblue;
+margin: 50px 20px 0 20px;
 
 }
 .order_container{
@@ -19,6 +21,6 @@ background-color: aliceblue;
 
 .products_wrapper{
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(4,1fr);
     gap: 20px;
 }
