@@ -5,21 +5,32 @@
 }
 
 .order_title{
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+}
+
+
+.review_btn,.clear_btn{
+    padding: 16px 40px;
+    margin:20px 10px 0;
+    color: #fff;
+    background: transparent;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
 }
 
 .clear_btn{
-    background-color:crimson;
-padding: 16px 40px;
-border: none;
-margin:20px 10px 0;
-color: #fff;
+    border:1px solid crimson;
 }
 
+.clear_btn:hover{
+    background-color: crimson;
+}
 .review_btn{
-    background-color:gold;
-    padding: 16px 40px;
-    border: none;
-    margin:20px 10px 0;
-    color: #fff;
+    border:2px solid gold;
+}
+.review_btn:hover{
+    background-color: gold;
 }
