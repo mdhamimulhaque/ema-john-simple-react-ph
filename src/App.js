@@ -5,6 +5,7 @@ import Main from './layouts/Main';
 import Orders from './components/Orders/Orders'
 import Inventory from './components/Inventory/Inventory';
 import AboutUs from './components/AboutUs/AboutUs';
+import { productsAndCartLoader } from './loaders/productsAndCartLoader';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         },
         {
           path: '/orders',
+          loader: productsAndCartLoader,
           element: <Orders />
         },
         {
