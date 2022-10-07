@@ -1,7 +1,7 @@
 import React from 'react';
-import './Order.css';
+import './Cart.css';
 
-const Order = ({ cart }) => {
+const Cart = ({ cart }) => {
 
 
     let total = 0;
@@ -30,4 +30,4 @@ const Order = ({ cart }) => {
     );
 };
 
-export default Order;
+export default Cart;

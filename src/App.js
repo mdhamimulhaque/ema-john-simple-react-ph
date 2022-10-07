@@ -1,12 +1,45 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header/Header';
 import Store from './components/Store/Store';
+import Main from './layouts/Main';
+import Orders from './components/Orders/Orders'
+import Inventory from './components/Inventory/Inventory';
+import AboutUs from './components/AboutUs/AboutUs';
+
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Main />,
+      children: [
+        {
+          path: '/',
+          element: <Store />
+        },
+        {
+          path: '/store',
+          element: <Store />
+        },
+        {
+          path: '/orders',
+          element: <Orders />
+        },
+        {
+          path: '/inventory',
+          element: <Inventory />
+        },
+        {
+          path: '/about',
+          element: <AboutUs />
+        }
+      ]
+    }
+
+  ])
   return (
     <div className="App">
-      <Header />
-      <Store />
+      <RouterProvider router={router} />
     </div>
   );
 }
