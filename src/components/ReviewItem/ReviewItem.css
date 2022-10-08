@@ -17,3 +17,10 @@ width: 91px;
     gap:24px;
     align-items: center;
 }
+
+.remove_btn{
+    height: 35px;
+    width: 35px;
+    color: #EB5757;
+    cursor: pointer;
+}

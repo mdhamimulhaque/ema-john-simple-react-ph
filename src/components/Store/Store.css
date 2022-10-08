@@ -24,3 +24,23 @@ margin: 50px 20px 0 20px;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
 }
+
+
+.review_btn{
+    padding: 16px 40px;
+    margin:20px 10px 0;
+    color: #fff;
+    background: transparent;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.review_btn{
+    border:2px solid gold;
+}
+.review_btn:hover{
+    background-color: gold;
+}

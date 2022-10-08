@@ -9,7 +9,7 @@
 }
 
 
-.review_btn,.clear_btn{
+.clear_btn{
     padding: 16px 40px;
     margin:20px 10px 0;
     color: #fff;
@@ -27,10 +27,4 @@
 
 .clear_btn:hover{
     background-color: crimson;
-}
-.review_btn{
-    border:2px solid gold;
-}
-.review_btn:hover{
-    background-color: gold;
 }
