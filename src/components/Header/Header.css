@@ -11,6 +11,9 @@
 .header_nav a{
     color: #fff;
     font-size: 17px;
-    margin-left: 35px;
+    margin:0 35px;
     text-decoration: none;
+}
+.header_userInfo{
+    color: brown;
 }
