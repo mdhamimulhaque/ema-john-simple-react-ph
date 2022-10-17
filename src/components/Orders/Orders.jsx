@@ -41,9 +41,9 @@ const Order = () => {
                 </div>
             </section>
             <section className="order_container">
-                <Cart cart={cart}
-                    clearCart={clearCart}
-                />
+                <Cart cart={cart} clearCart={clearCart}>
+                    <Link to="/shipping"><button className='review_btn'>Proceed Shipping</button></Link>
+                </Cart>
             </section>
         </div>
     );
