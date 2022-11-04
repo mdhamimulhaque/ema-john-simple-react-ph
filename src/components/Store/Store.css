@@ -44,3 +44,22 @@ margin: 50px 20px 0 20px;
 .review_btn:hover{
     background-color: gold;
 }
+
+
+button.pagiBtn {
+    padding: 5px 10px;
+}
+
+.pagination {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.pagination .selected{
+    background-color: gold;
+    border:1px solid gold;
+    color:#fff;
+    font-weight: bold;
+    padding: 10px 15px;
+
+}

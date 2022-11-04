@@ -5,7 +5,7 @@ import "./LogIn.css";
 
 const LogIn = () => {
 
-    const { logInUser } = useContext(AuthContext);
+    const { logInUser, setLoading } = useContext(AuthContext);
     const navigate = useNavigate()
     const location = useLocation();
 
@@ -26,7 +26,10 @@ const LogIn = () => {
             })
             .catch((error) => {
                 console.error(error)
-            });
+            })
+            .finally(() => {
+                setLoading(false)
+            })
     }
     return (
         <div className='form-container'>

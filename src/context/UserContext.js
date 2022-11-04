@@ -40,7 +40,14 @@ const UserContext = ({ children }) => {
         return signOut(auth)
     }
 
-    const authInfo = { user, loading, createUser, logInUser, logOutUser };
+    const authInfo = {
+        user,
+        loading,
+        createUser,
+        logInUser,
+        logOutUser,
+        setLoading
+    };
 
 
     return (
